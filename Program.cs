@@ -2,34 +2,29 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Dias de la Semana");
-        Console.WriteLine("Escriba un numero del 1 al 7");
-        int dia = Convert.ToInt32(Console.ReadLine());
-        switch (dia)
+
+        Console.WriteLine("Clasificacion de letras por rango");
+        Console.WriteLine("Dame una letra:");
+        char letra = Convert.ToChar(Console.ReadLine().ToUpper());
+        switch (letra)
         {
-            case 1:
-                Console.WriteLine("Lunes");
+            case 'A'  :
+                Console.WriteLine("Excelente");
                 break;
-            case 2:
-                Console.WriteLine("Martes");
+            case 'B':
+                Console.WriteLine("Bueno");
                 break;
-            case 3:
-                Console.WriteLine("Miercoles");
+            case 'C':
+                Console.WriteLine("Regular");
                 break;
-            case 4:
-                Console.WriteLine("Jueves");
+            case 'D':
+                Console.WriteLine("Deficiente");
                 break;
-            case 5:
-                Console.WriteLine("Viernes");
-                break;
-            case 6:
-                Console.WriteLine("Sabado");
-                break;
-            case 7:
-                Console.WriteLine("Domingo");
+            case 'F':
+                Console.WriteLine("Reprobado");
                 break;
             default:
-                Console.WriteLine("Numero no valido, dijite un numero del 1 al 7");
+                Console.WriteLine("Letra no valida");
                 break;
         }
     }
